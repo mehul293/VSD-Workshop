@@ -115,20 +115,16 @@
 which sta
 ![which sta](https://user-images.githubusercontent.com/80052874/110325370-44c42e00-803d-11eb-8bb7-c7884475d507.PNG)
 
-git clone https://github.com/kunalg123/vsdflow.git
-![image](https://user-images.githubusercontent.com/80052871/110253199-fe27f280-7fae-11eb-851c-ec6b04cb2187.png)
-
 *cd vsdflow
 ./vsdflow spi_slave_design_details.csv
 ls -ltr outdir_spi_slave/*
-![image](https://user-images.githubusercontent.com/80052871/110253315-accc3300-7faf-11eb-8c72-c6149d4766ab.png)
+![4](https://user-images.githubusercontent.com/80052874/110325628-91a80480-803d-11eb-923a-625de442c9ef.PNG)
 
 *cd outdir_spi_slave
 qflow display spi_slave*
 It will open 2 windows "layout1" and "tkcon"
-![image](https://user-images.githubusercontent.com/80052871/110253341-d2593c80-7faf-11eb-9630-c390d2d4b2d2.png)
-
-![image](https://user-images.githubusercontent.com/80052871/110253547-f406f380-7fb0-11eb-8622-13647c3d112d.png)
+![Uploading 5.PNG…]()
+![Uploading 6.PNG…]()
 
 *cd
 cd vsdflow
