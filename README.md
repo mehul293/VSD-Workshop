@@ -151,16 +151,17 @@ Verilog module : picorv32
 
 ![10](https://user-images.githubusercontent.com/80052874/110363681-dac17e00-8068-11eb-975e-0e5a46823440.PNG)
 
-![11](https://user-images.githubusercontent.com/80052874/110365646-473d7c80-806b-11eb-9b47-9278d9a34707.PNG)
-
 ### DAY 2
 #### Chip planning strategies and introduction to foundry library cells
+
+![11](https://user-images.githubusercontent.com/80052874/110365646-473d7c80-806b-11eb-9b47-9278d9a34707.PNG)
 
 *cd
 cd vsdflow/my_picorv32
 qflow display picorv32 &*
 This will open layout and tkcon window In the layout window, select whole chip using below steps
-![image](https://user-images.githubusercontent.com/80052871/110253583-26b0ec00-7fb1-11eb-8061-259c41741687.png)
+
+![46](https://user-images.githubusercontent.com/80052874/110382791-65ae7280-8081-11eb-8b6a-e1b682d6bb42.PNG)
 
 Take cursor to bottom left
 Left mouse click
