@@ -147,11 +147,11 @@ Verilog module : picorv32
 
 ![8](https://user-images.githubusercontent.com/80052874/110361518-26265d00-8066-11eb-81c3-d312948a96ef.PNG)
 
-![image](https://user-images.githubusercontent.com/80052871/110253397-219f6d00-7fb0-11eb-9268-366e023fe173.png)
+![9](https://user-images.githubusercontent.com/80052874/110362389-3985f800-8067-11eb-8f42-f6aaad3a6add.PNG)
 
-![image](https://user-images.githubusercontent.com/80052871/110253401-26642100-7fb0-11eb-8427-e96505a6157c.png)
+![10](https://user-images.githubusercontent.com/80052874/110363681-dac17e00-8068-11eb-975e-0e5a46823440.PNG)
 
-![image](https://user-images.githubusercontent.com/80052871/110253412-31b74c80-7fb0-11eb-8088-9359189e7f21.png)
+![11](https://user-images.githubusercontent.com/80052874/110365646-473d7c80-806b-11eb-9b47-9278d9a34707.PNG)
 
 ### DAY 2
 #### Chip planning strategies and introduction to foundry library cells
