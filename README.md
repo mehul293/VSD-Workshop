@@ -296,15 +296,16 @@ Open terminal and Type below commands
 *cd
 cd ngspice_labs
 cat inv_tran.spice
-ngspice inv_tran.spice*
-![image](https://user-images.githubusercontent.com/80052871/110254396-fb300080-7fb4-11eb-9625-fa418abd2f25.png)
 
-![image](https://user-images.githubusercontent.com/80052871/110254432-2286cd80-7fb5-11eb-8fd2-1e74b7d0ba78.png)
+![28](https://user-images.githubusercontent.com/80052874/110374365-9dfc8380-8076-11eb-8eeb-3800bb06306b.PNG)
+
+ngspice inv_tran.spice
 load is 10fF and rise delay is ~126ps
 
-![image](https://user-images.githubusercontent.com/80052871/110254422-16027500-7fb5-11eb-885f-9a18ebe66b86.png)
+![29](https://user-images.githubusercontent.com/80052874/110374691-f895df80-8076-11eb-9e70-fb4c2fd0dea4.PNG)
 
-![image](https://user-images.githubusercontent.com/80052871/110254465-3fbb9c00-7fb5-11eb-9a7b-6dc505d60735.png)
+![30](https://user-images.githubusercontent.com/80052874/110374900-3f83d500-8077-11eb-87d7-d233c0733089.PNG)
+
 Changing the load to 20f.
 ![image](https://user-images.githubusercontent.com/80052871/110254735-5d3d3580-7fb6-11eb-9bd1-f81ae14a9eab.png)
 ![image](https://user-images.githubusercontent.com/80052871/110254741-66c69d80-7fb6-11eb-8c5d-abcf6f64568e.png)
