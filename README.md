@@ -123,8 +123,10 @@ ls -ltr outdir_spi_slave/*
 *cd outdir_spi_slave
 qflow display spi_slave*
 It will open 2 windows "layout1" and "tkcon"
-![Uploading 5.PNG…]()
-![Uploading 6.PNG…]()
+![5](https://user-images.githubusercontent.com/80052874/110356737-90d49a00-8060-11eb-8f9f-2f73c30cac74.PNG)
+
+![6](https://user-images.githubusercontent.com/80052874/110357676-8c5cb100-8061-11eb-8a63-a3c7463e4fc7.PNG)
+
 
 *cd
 cd vsdflow
