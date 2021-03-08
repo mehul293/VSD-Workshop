@@ -307,26 +307,31 @@ load is 10fF and rise delay is ~126ps
 ![30](https://user-images.githubusercontent.com/80052874/110374900-3f83d500-8077-11eb-87d7-d233c0733089.PNG)
 
 Changing the load to 20f.
-![image](https://user-images.githubusercontent.com/80052871/110254735-5d3d3580-7fb6-11eb-9bd1-f81ae14a9eab.png)
-![image](https://user-images.githubusercontent.com/80052871/110254741-66c69d80-7fb6-11eb-8c5d-abcf6f64568e.png)
 
+![31](https://user-images.githubusercontent.com/80052874/110375769-67276d00-8078-11eb-8cef-1b06193cbc9f.PNG)
+
+![32](https://user-images.githubusercontent.com/80052874/110375920-94741b00-8078-11eb-9290-2700db5b3bc6.PNG)
 
 #### Timing analysis with ideal clock
 
 Go to labs Open below file using "leafpad" or "less" or "vim" - whichever you are comfortable with)
 
 /usr/local/share/qflow/tech/osu018/osu018_stdcells.lib
-
-![image](https://user-images.githubusercontent.com/80052871/110254798-ad1bfc80-7fb6-11eb-88f2-bfa05d32ccb8.png)
 slew upper threshold pct fall = 80 
-![image](https://user-images.githubusercontent.com/80052871/110254838-e0f72200-7fb6-11eb-853e-13c7568578ad.png)
+
+![33](https://user-images.githubusercontent.com/80052874/110377198-1f094a00-807a-11eb-846d-8ea343cffeba.PNG)
+
 o/p threshold pct rise = 50%
-![image](https://user-images.githubusercontent.com/80052871/110254870-0a17b280-7fb7-11eb-9e6b-e18d6deb9634.png)
+
+![34](https://user-images.githubusercontent.com/80052874/110377315-4233f980-807a-11eb-9c37-88710fbac819.PNG)
+
 variable 1 and variable 2
-![image](https://user-images.githubusercontent.com/80052871/110254892-2a477180-7fb7-11eb-9c54-43fc91e9cfe0.png)
+
+![35](https://user-images.githubusercontent.com/80052874/110377444-70193e00-807a-11eb-8911-7eef52148b71.PNG)
+
 INVX1
-![image](https://user-images.githubusercontent.com/80052871/110254901-33d0d980-7fb7-11eb-81ea-0954c4849b01.png)
-Delay template 5x5
+
+![36](https://user-images.githubusercontent.com/80052874/110377599-9d65ec00-807a-11eb-8a81-904fe5509d52.PNG
 
 
 Go to labs
@@ -339,7 +344,8 @@ leafpad picorv32.sdc*
 Type below lines in the file picorv32.sdc file which you have just opened above
 
 create_clock -name clk -period 2.5 -waveform {0 1.25} [get_ports clk]
-![image](https://user-images.githubusercontent.com/80052871/110254928-4ea34e00-7fb7-11eb-90d2-4c0797821c35.png)
+
+![37](https://user-images.githubusercontent.com/80052874/110378067-2b41d700-807b-11eb-8da1-8a36a8a1d38e.PNG)
 
 Save and close the above file
 
@@ -353,51 +359,23 @@ read_verilog synthesis/picorv32.rtlnopwr.v
 link_design picorv32
 read_sdc picorv32.sdc
 report_checks*
-![image](https://user-images.githubusercontent.com/80052871/110254940-59f67980-7fb7-11eb-8a03-c9da867c87ec.png)
 
+![38](https://user-images.githubusercontent.com/80052874/110378382-8c69aa80-807b-11eb-8464-8720a0be1518.PNG)
 
 Now type below command
 
 sta prelayout_sta.conf
-![image](https://user-images.githubusercontent.com/80052871/110254954-68449580-7fb7-11eb-8304-423980aeda15.png)
-SLACK value =-0.56
-![image](https://user-images.githubusercontent.com/80052871/110254959-6d094980-7fb7-11eb-8f41-f1742248047f.png)
-data arrival time =2.9ns
-![image](https://user-images.githubusercontent.com/80052871/110254960-709cd080-7fb7-11eb-8dbd-32e0eff94137.png)
-data required time =2.3389ns
+SLACK value =-2.64
 
+![39](https://user-images.githubusercontent.com/80052874/110379354-bc657d80-807c-11eb-8c4b-0a45f10cac9b.PNG)
 
-#### Timing analysis with real clock
-Perform all steps in D4SK2 - MCQ11
+data arrival time = 4.97ns
 
-You are now at below "sta" terminal
+![40](https://user-images.githubusercontent.com/80052874/110379546-f6cf1a80-807c-11eb-9bee-54cfcdd7e409.PNG)
 
-%
-Type below command in above terminal
+data required time =2.34ns
 
-*set_propagated_clock [all_clocks]
-report_checks*
-
-![image](https://user-images.githubusercontent.com/80052871/110255131-4ac3fb80-7fb8-11eb-9608-c3433047b4ef.png)
-SLACK value after clock propagation = around -0.68ns
-
-![image](https://user-images.githubusercontent.com/80052871/110255286-ece3e380-7fb8-11eb-980c-967127118044.png)
-launch clock network delay
-
-![image](https://user-images.githubusercontent.com/80052871/110255319-10a72980-7fb9-11eb-84e7-b81a7b908a61.png)
-capture clock network delay=0.56
-
-Perform all steps in D4SK4 - MCQ3
-
-Type below command
-
-report_checks -path_delay min -digits 4
-
-![image](https://user-images.githubusercontent.com/80052871/110255353-37656000-7fb9-11eb-8bfd-1f6ec16d0d8c.png)
-![image](https://user-images.githubusercontent.com/80052871/110255356-3cc2aa80-7fb9-11eb-9f91-29f23c1be189.png)
-
-library hold time and hold slack = -9.4ps and 222.5ps respectively
-
+![41](https://user-images.githubusercontent.com/80052874/110379629-15351600-807d-11eb-9a92-305dd987fce7.PNG)
 
 ### DAY 5
 #### PNR interactive flow tutorial
