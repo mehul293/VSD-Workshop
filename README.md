@@ -17,16 +17,9 @@
 
 ![d1s4m3](https://user-images.githubusercontent.com/80052874/110321678-06784000-8038-11eb-9148-c26e8ebe139e.PNG)
 
-
-### D1SK4 - MCQ4
-
-which sta
-
-### D1SK4 - MCQ5
-
+Invoked the flow using below git clone for vsdflow :
 git clone https://github.com/kunalg123/vsdflow.git
 
-### D1SK4 - MCQ6
 *cd vsdflow
 ./vsdflow spi_slave_design_details.csv
 ls -ltr outdir_spi_slave/*
