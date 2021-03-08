@@ -221,7 +221,7 @@ ngspice 1 -> plot out in
 
 ![18](https://user-images.githubusercontent.com/80052874/110371088-83281000-8072-11eb-8d77-2384f8cda570.PNG)
 
-Rise delay= 76ps
+Rise delay= 114ps
 
 ![19](https://user-images.githubusercontent.com/80052874/110371450-02b5df00-8073-11eb-8880-d7439de02382.PNG)
 
@@ -286,7 +286,7 @@ magic -T min2.tech fn_postlayout.mag &*
 git clone https://github.com/kunalg123/ngspice_labs
 cd ngspice_labs
 cat inv_tran.spice*
-![image](https://user-images.githubusercontent.com/80052871/110254534-9cb75200-7fb5-11eb-80a3-167808b73d25.png)
+
  input rise slew and fall slew = 10ps, 10ps respectively
 
 Go to Day 4 (When you start Day 4 labs, system will enable Day 2 labs for you. Click on Desktop icon)
