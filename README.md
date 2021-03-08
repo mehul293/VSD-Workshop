@@ -155,9 +155,6 @@ Verilog module : picorv32
 
 ### DAY 2
 #### Chip planning strategies and introduction to foundry library cells
-![image](https://user-images.githubusercontent.com/80052871/110253632-55c75d80-7fb1-11eb-9664-5c160e72ccca.png)
-![image](https://user-images.githubusercontent.com/80052871/110253635-595ae480-7fb1-11eb-942d-6fea51a386cc.png)
-![image](https://user-images.githubusercontent.com/80052871/110253636-5bbd3e80-7fb1-11eb-8ad7-bd9cf63de461.png)
 
 *cd
 cd vsdflow/my_picorv32
@@ -180,26 +177,28 @@ box
 ####  Labs for CMOS inverter ngspice simulation
 *cd
 git clone https://github.com/kunalg123/ngspice_labs.git
+
+![12](https://user-images.githubusercontent.com/80052874/110368977-bae18880-806f-11eb-98a5-d007fcce7686.PNG)
+
 cd ngspice_labs
 cat inv.spice*
-![image](https://user-images.githubusercontent.com/80052871/110253698-c53d4d00-7fb1-11eb-8721-5c2f23537d20.png)
+
+![13](https://user-images.githubusercontent.com/80052874/110369107-e9f7fa00-806f-11eb-83b0-349011d80ac8.PNG)
 
 *cd
 cd ngspice_labs
 ngspice inv.spice*
 There will be terminal like below
-![image](https://user-images.githubusercontent.com/80052871/110253779-2402c680-7fb2-11eb-91aa-862412ed0eb5.png)
 ngspice 1 ->
-On the above ngspice terminal, type below commands
 
+![14](https://user-images.githubusercontent.com/80052874/110369207-13b12100-8070-11eb-9769-e2e665700b31.PNG)
+
+On the above ngspice terminal, type below commands
 *run
 setplot dc1
 plot out in*
-![image](https://user-images.githubusercontent.com/80052871/110253791-2e24c500-7fb2-11eb-950e-0c9dc167b312.png)
 
-![image](https://user-images.githubusercontent.com/80052871/110253800-35e46980-7fb2-11eb-9b76-e512c2ef800e.png)
-"x0" value lies between 1.0v-1.1v
-
+![15](https://user-images.githubusercontent.com/80052874/110369380-5672f900-8070-11eb-9c4b-8ffbbdf2ae4a.PNG)
 
 Go to labs, open terminal
 
@@ -207,19 +206,24 @@ Type below command
 
 leafpad inv.spice
 
-![image](https://user-images.githubusercontent.com/80052871/110253847-6fb57000-7fb2-11eb-9631-c64cd0f7da3e.png)
+![16](https://user-images.githubusercontent.com/80052874/110370423-a69e8b00-8071-11eb-86bc-453e5870e867.PNG)
 
-![image](https://user-images.githubusercontent.com/80052871/110253937-d63a8e00-7fb2-11eb-92e4-f23993310296.png)
+![15](https://user-images.githubusercontent.com/80052874/110370498-c0d86900-8071-11eb-9730-1f655ca610eb.PNG)
 
 leafpad in_tran.spice
-![image](https://user-images.githubusercontent.com/80052871/110253960-ece0e500-7fb2-11eb-94f6-cb7e2fbbae87.png)
+
+![17](https://user-images.githubusercontent.com/80052874/110370633-f1b89e00-8071-11eb-81a5-b17444564f47.PNG)
 
 ngspice inv_tran.spice
 ngspice 1 -> run
 ngspice 1 -> setplot tran1
 ngspice 1 -> plot out in
-![image](https://user-images.githubusercontent.com/80052871/110253978-01bd7880-7fb3-11eb-9a85-750021c087aa.png)
+
+![18](https://user-images.githubusercontent.com/80052874/110371088-83281000-8072-11eb-8d77-2384f8cda570.PNG)
+
 Rise delay= 76ps
+
+![19](https://user-images.githubusercontent.com/80052874/110371450-02b5df00-8073-11eb-8880-d7439de02382.PNG)
 
 #### Art of layout using Euler's path plus stick diagram
 Go to labs, type below commands
@@ -231,11 +235,17 @@ ngspice 1 -> run
 ngspice 1 -> setplot tran1
 ngspice 1 -> plot out 1.25*
 
-![image](https://user-images.githubusercontent.com/80052871/110254047-6ed10e00-7fb3-11eb-8b0a-7b66663ae18d.png)
+![20](https://user-images.githubusercontent.com/80052874/110371664-4d375b80-8073-11eb-986d-ccb6f4f4b702.PNG)
+
+![21](https://user-images.githubusercontent.com/80052874/110371826-82dc4480-8073-11eb-9689-0222a3106366.PNG)
+
 Value of X0 at the intersection of horizontal blue line and middle rising waveform = Around 1.6e-09
 
-![image](https://user-images.githubusercontent.com/80052871/110254082-9a53f880-7fb3-11eb-83ab-5ea7fca05601.png)
+![22](https://user-images.githubusercontent.com/80052874/110371928-a7382100-8073-11eb-853b-9f56838ef93a.PNG)
+
 Value of X0 at the intersection of horizontal blue line and middle falling waveform = Around 2.2e-09
+
+![23](https://user-images.githubusercontent.com/80052874/110372042-ce8eee00-8073-11eb-9246-52db74b4a2b0.PNG)
 
 #### Lab for Magic and post-layout ngspice simulations
 
@@ -247,15 +257,16 @@ Type below commands
 cd ngspice_labs
 magic -T min2.tech*
 This will open magic layout window and tkcon window
-![image](https://user-images.githubusercontent.com/80052871/110254178-11898c80-7fb4-11eb-9877-deb68bcf5fa8.png)
+
+![25](https://user-images.githubusercontent.com/80052874/110373518-97b9d780-8075-11eb-9109-aa0b7d37cac1.PNG)
+
 8 nsubstratecontact and 6 polysilicon strips
 
 Go to tkcon window and type below command
-
 source draw_fn.tcl
-![image](https://user-images.githubusercontent.com/80052871/110254163-f9b20880-7fb3-11eb-8f08-1067ec64e3f8.png)
 
-![image](https://user-images.githubusercontent.com/80052871/110254205-2fef8800-7fb4-11eb-8308-f6e7f4689849.png)
+![26](https://user-images.githubusercontent.com/80052874/110373666-c20b9500-8075-11eb-9a55-049e915bdc33.PNG)
+
 area of the above design = 4489 unit^2
 
 Go to labs, open terminal
@@ -266,7 +277,7 @@ Type below command
 cd ngspice_labs
 magic -T min2.tech fn_postlayout.mag &*
 
-![image](https://user-images.githubusercontent.com/80052871/110254238-5e6d6300-7fb4-11eb-9e84-37d86df7fe68.png)
+![27](https://user-images.githubusercontent.com/80052874/110373929-0eef6b80-8076-11eb-9826-4465f905c34a.PNG)
 
 ### DAY 4
 ####  Timing modelling using delay table
