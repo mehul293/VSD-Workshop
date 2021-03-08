@@ -135,7 +135,7 @@ cd my_picorv32
 mkdir source synthesis layout
 cp ~/vsdflow/verilog/picorv32.v source/.
 qflow gui &*
-![image](https://user-images.githubusercontent.com/80052871/110253380-06ccf880-7fb0-11eb-843d-cc9b3dec4f49.png)
+![7](https://user-images.githubusercontent.com/80052874/110361369-eb242980-8065-11eb-8da9-43ccfb508871.PNG)
 
 Select below options in gui
 
@@ -145,7 +145,7 @@ Verilog source file : picorv32.v
 
 Verilog module : picorv32
 
-![image](https://user-images.githubusercontent.com/80052871/110253395-1e0be600-7fb0-11eb-9731-e4410e088001.png)
+![8](https://user-images.githubusercontent.com/80052874/110361518-26265d00-8066-11eb-81c3-d312948a96ef.PNG)
 
 ![image](https://user-images.githubusercontent.com/80052871/110253397-219f6d00-7fb0-11eb-9268-366e023fe173.png)
 
