@@ -379,9 +379,6 @@ data required time =2.34ns
 
 ### DAY 5
 #### PNR interactive flow tutorial
-![image](https://user-images.githubusercontent.com/80052871/110255563-66c89c80-7fba-11eb-8367-678203f6a07e.png)
-
-Go to Day 5 labs
 
 Open terminal
 
@@ -394,11 +391,16 @@ qflow sta picorv32
 qflow backanno picorv32
 leafpad log/sta.log*
 
-![image](https://user-images.githubusercontent.com/80052871/110255456-d427fd80-7fb9-11eb-8b61-6940477e68f2.png)
+![43](https://user-images.githubusercontent.com/80052874/110381638-bfae3880-807f-11eb-9dac-03d14266cb52.PNG)
+
+![44](https://user-images.githubusercontent.com/80052874/110381722-df456100-807f-11eb-9e86-2993e13e8bdf.PNG)
 pre-layout frequency = 314 MHz
 
+![42](https://user-images.githubusercontent.com/80052874/110381862-16b40d80-8080-11eb-9a03-6321e969fe66.PNG)
+
 log/post_sta.log
-![image](https://user-images.githubusercontent.com/80052871/110255490-12bdb800-7fba-11eb-8118-103a00d66d70.png)
+![45](https://user-images.githubusercontent.com/80052874/110381992-482cd900-8080-11eb-9fef-45e0130d74d0.PNG)
+
 post-layout frequency = 297 MHz
 
 ## Acknowledgement
