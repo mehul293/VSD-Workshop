@@ -193,14 +193,16 @@ box
 ####  Labs for CMOS inverter ngspice simulation
 *cd
 git clone https://github.com/kunalg123/ngspice_labs.git
-
+#####  git clone is a Git command line utility which is used to target an existing repository and create a clone, or copy of the target repository.
 ![12](https://user-images.githubusercontent.com/80052874/110368977-bae18880-806f-11eb-98a5-d007fcce7686.PNG)
 
+##### The cd command, also known as chdir (change directory), is a command-line shell command used to change the current working directory in various operating systems. It can be used in shell scripts and batch files.cd ngspice_labs command changes the directory into ngspice_labs. ngspice is a circuit simulation tool used to simulate the dc and transient characteristics of different gates/cells.
 cd ngspice_labs
 cat inv.spice*
 
 ![13](https://user-images.githubusercontent.com/80052874/110369107-e9f7fa00-806f-11eb-83b0-349011d80ac8.PNG)
 
+##### ngspice inv.spice command open the simulataion tool and the design is inverter.ngspice 1 -> run is used to run the fn_prelayout.spice. setplot tran1 is used to set the plot in dc mode. plot is a command, which is used to plot simulated waveforms with respect some input in this case input (50% of the power supply) i.e 1.25.This will open a plot with CMOS VTC and Blue 45 degree line
 *cd
 cd ngspice_labs
 ngspice inv.spice*
