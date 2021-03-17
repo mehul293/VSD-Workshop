@@ -127,6 +127,9 @@ ls -ltr outdir_spi_slave/*
 *cd outdir_spi_slave
 qflow display spi_slave*
 It will open 2 windows "layout1" and "tkcon"
+
+##### cd outdir_spi_slave command change the directory to outdir_spi_slave and the qflow display spi_slave command open and display the qflow manager where you do preference,synthesis,placement and so on.Qflow(complete tool chain) is a complete tool chain for synthesizing digital circuits starting from verilog source and ending in physical layout for a specific target fabrication process
+
 ![5](https://user-images.githubusercontent.com/80052874/110356737-90d49a00-8060-11eb-8f9f-2f73c30cac74.PNG)
 
 ![6](https://user-images.githubusercontent.com/80052874/110357676-8c5cb100-8061-11eb-8a63-a3c7463e4fc7.PNG)
