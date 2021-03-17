@@ -158,7 +158,13 @@ Verilog module : picorv32
 
 ![9](https://user-images.githubusercontent.com/80052874/110362389-3985f800-8067-11eb-8f42-f6aaad3a6add.PNG)
 
+##### This is where we can arrange the different pins and ports of our chip.
 ![10](https://user-images.githubusercontent.com/80052874/110363681-dac17e00-8068-11eb-975e-0e5a46823440.PNG)
+
+![47](https://user-images.githubusercontent.com/80052874/111498661-24485200-8768-11eb-8fd5-5cd104d50cbf.PNG)
+##### Number of cells = 13197	
+##### Number of flops = 1613
+##### Ratio of flops to total logic  = 1317/1613 = 12.22%
 
 ### DAY 2
 #### Chip planning strategies and introduction to foundry library cells
