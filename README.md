@@ -224,6 +224,8 @@ Type below command
 
 leafpad inv.spice
 
+##### By using leafpad inv.spice command opens the inv.spice file and then edit the pmos width into 0.75u and then perform the dc simulation in ngspice simulation tool.The below figure shows that cmos model description and the w/l ratios of both pmos and nmos.After changing the width of pmos,the transfer characteristic curve shifts to right side.
+
 ![16](https://user-images.githubusercontent.com/80052874/110370423-a69e8b00-8071-11eb-86bc-453e5870e867.PNG)
 
 ![15](https://user-images.githubusercontent.com/80052874/110370498-c0d86900-8071-11eb-9730-1f655ca610eb.PNG)
@@ -275,6 +277,8 @@ Type below commands
 cd ngspice_labs
 magic -T min2.tech*
 This will open magic layout window and tkcon window
+
+##### The below image shows the layout diagram of a function. In the layout, the pink color strips are polysilicon strips and bottom of the layout shows the gnd terminal and it has contacts which are used to connect the ground terminal.
 
 ![25](https://user-images.githubusercontent.com/80052874/110373518-97b9d780-8075-11eb-9109-aa0b7d37cac1.PNG)
 
