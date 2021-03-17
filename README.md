@@ -105,12 +105,14 @@
 
 #### Installation of basic EDA tools
 
-1.Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal. 2.Now type the command "yosys". What do you see next?
+1.Click on VSD IAT, Go to "Lab Instances". Then under "Links", click on the "link" icon. Click bottom left, System tools > LXTerminal. 
+
+##### yosys is synthesis tool which is used to convert the rtl code into gate level netlist. To open the yosys tool, we use the command yosys.
 
 ![d1s4m3](https://user-images.githubusercontent.com/80052874/110325245-19d9da00-803d-11eb-862c-efb165e05588.PNG)
 
 #### sta
-
+#### #“which” is command used to shows the loction/directory path of tool/folder.Linux which command is used to identify the location of a given executable that is executed when you type the executable name (command) in the terminal prompt. The command searches for the executable specified as an argument in the directories listed in the PATH environment variable.
 which sta
 ![which sta](https://user-images.githubusercontent.com/80052874/110325370-44c42e00-803d-11eb-8bb7-c7884475d507.PNG)
 
