@@ -119,6 +119,9 @@ which sta
 *cd vsdflow
 ./vsdflow spi_slave_design_details.csv
 ls -ltr outdir_spi_slave/*
+
+##### The cd command, also known as chdir (change directory), is a command-line shell command used to change the current working directory in various operating systems. It can be used in shell scripts and batch files.cd vsdflow command is usedchange the directory to vsdflow folder../vsdflow spi_slave_design_details.csv is to initialize the design.The ls command lists the contents of a specified directory, excluding dotfiles. If no directory is specified then, by default, the contents of the current directory are listed. Listed files are sorted alphabetically.ls -ltr outdir_spi_slave | wc will show you the total 17 number of lines beacuse 1st line will give total number and the rest 16 are the number of flies.
+
 ![4](https://user-images.githubusercontent.com/80052874/110325628-91a80480-803d-11eb-923a-625de442c9ef.PNG)
 
 *cd outdir_spi_slave
