@@ -132,9 +132,7 @@ It will open 2 windows "layout1" and "tkcon"
 
 ![5](https://user-images.githubusercontent.com/80052874/110356737-90d49a00-8060-11eb-8f9f-2f73c30cac74.PNG)
 
-##### 1st select the chip area and then type the command box in tkcon window.it shows the selected area in microns.
 ![6](https://user-images.githubusercontent.com/80052874/110357676-8c5cb100-8061-11eb-8a63-a3c7463e4fc7.PNG)
-
 
 *cd
 cd vsdflow
@@ -143,6 +141,9 @@ cd my_picorv32
 mkdir source synthesis layout
 cp ~/vsdflow/verilog/picorv32.v source/.
 qflow gui &*
+
+##### cd vsdflow is a command change the directory to vsdflow, mkdir is a command create the folder, cd my_picorv32 is a command to change the directory to my_picorv32, mkdir source synthesis layout is a command to create folders source, synthesis and layout, cp ~/vsdflow/Verilog/picorv32.v/source/. - copy the Verilog file i.e picorv32 from source to vsdflow, qflow gui &- it open qflow manager in a graphical user interface.
+
 ![7](https://user-images.githubusercontent.com/80052874/110361369-eb242980-8065-11eb-8da9-43ccfb508871.PNG)
 
 Select below options in gui
