@@ -112,7 +112,7 @@
 ![d1s4m3](https://user-images.githubusercontent.com/80052874/110325245-19d9da00-803d-11eb-862c-efb165e05588.PNG)
 
 #### sta
-#### #“which” is command used to shows the loction/directory path of tool/folder.Linux which command is used to identify the location of a given executable that is executed when you type the executable name (command) in the terminal prompt. The command searches for the executable specified as an argument in the directories listed in the PATH environment variable.
+##### “which” is command used to shows the loction/directory path of tool/folder.Linux which command is used to identify the location of a given executable that is executed when you type the executable name (command) in the terminal prompt. The command searches for the executable specified as an argument in the directories listed in the PATH environment variable.
 which sta
 ![which sta](https://user-images.githubusercontent.com/80052874/110325370-44c42e00-803d-11eb-8bb7-c7884475d507.PNG)
 
@@ -132,6 +132,7 @@ It will open 2 windows "layout1" and "tkcon"
 
 ![5](https://user-images.githubusercontent.com/80052874/110356737-90d49a00-8060-11eb-8f9f-2f73c30cac74.PNG)
 
+##### 1st select the chip area and then type the command box in tkcon window.it shows the selected area in microns.
 ![6](https://user-images.githubusercontent.com/80052874/110357676-8c5cb100-8061-11eb-8a63-a3c7463e4fc7.PNG)
 
 
